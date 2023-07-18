@@ -31,8 +31,27 @@ struct UpcomingEvent: View {
             VStack {
                 Text(title).font(.title3)
                     .foregroundColor(Color(red: 0xE3 / 255, green: 0x6F / 255, blue: 0x5B / 255))
-                Text(getDuration()).font(.title3)
+                Spacer()
+                Text("duration").font(.title3)
                     .foregroundColor(Color.gray)
+                Text(location).font(.title3)
+                    .foregroundColor(Color.gray)
+            }
+            
+            Button(action: {
+                EventView()
+            }) {
+                HStack {
+                    /// Creates an image using the system icon named "checkmark", allowing it to adapt to its parent view's constraints, setting the image size with width 16 points and height 16 points, center the image
+                    Image(systemName: "checkmark")
+                        .resizable()
+                        .frame(width: 16, height: 16, alignment: .center)
+                    
+                    /// Displays the text "OK" in bold with predefined font style .body
+                    Text("OK")
+                        .font(.body)
+                        .bold()
+                }
             }
         }
     }
@@ -71,8 +90,8 @@ struct UpcomingEvent: View {
     }
 }
 
-struct UpcomingEvent_Previews: PreviewProvider {
+struct UpcomingEventView_Previews: PreviewProvider {
     static var previews: some View {
-        UpcomingEvent(title: "Interview Preparation", startDateTime: "2023-08-01 14:00:00", endDateTime: "2023-01-01 17:00:00", description: "Learn IOS", location: "Online")
+        UpcomingEventView(title: "Interview Preparation", startDateTime: "2023-08-01 14:00:00", endDateTime: "2023-01-01 17:00:00", description: "Learn IOS", location: "Online")
     }
 }
