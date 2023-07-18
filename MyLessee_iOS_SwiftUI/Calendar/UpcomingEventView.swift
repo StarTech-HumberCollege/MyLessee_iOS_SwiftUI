@@ -1,5 +1,5 @@
 //
-//  UpcomingEvent.swift
+//  UpcomingEventView.swift
 //  MyLessee_iOS_SwiftUI
 //
 //  Created by Tuyi Chen on 2023-07-18.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UpcomingEvent: View {
+struct UpcomingEventView: View {
     
     let title: String
     let startDateTime: String // Format: "yyyy-MM-dd HH:mm:ss"
@@ -17,43 +17,37 @@ struct UpcomingEvent: View {
     
     var body: some View {
         HStack {
-            Image("line1 1").resizable().frame(width: 8, height: 80)
+            Image("line1 1").resizable().frame(width: 8, height: 100)
+                .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 0))
             
-            VStack {
+            VStack(alignment: .center) {
                 Text(extractPartFromDateTime(datetime: startDateTime, part: "day"))
                     .bold().font(.system(size: 40))
                 Text(extractPartFromDateTime(datetime: startDateTime, part: "month"))
                     .bold().font(.system(size: 30))
             }
             .foregroundColor(Color(red: 0xE3 / 255, green: 0x6F / 255, blue: 0x5B / 255))
-            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 30))
+            .frame(width: 80)
             
-            VStack {
-                Text(title).font(.title3)
+            VStack(alignment: .leading) {
+                Text(title).bold()
                     .foregroundColor(Color(red: 0xE3 / 255, green: 0x6F / 255, blue: 0x5B / 255))
-                Spacer()
-                Text("duration").font(.title3)
-                    .foregroundColor(Color.gray)
-                Text(location).font(.title3)
-                    .foregroundColor(Color.gray)
+                Spacer().frame(height: 20)
+                Text(getDuration()).foregroundColor(Color.gray)
+                Text(location).foregroundColor(Color.gray)
             }
             
+            Spacer()
             Button(action: {
+                /// TODO: Pass event object to EventView
                 EventView()
             }) {
-                HStack {
-                    /// Creates an image using the system icon named "checkmark", allowing it to adapt to its parent view's constraints, setting the image size with width 16 points and height 16 points, center the image
-                    Image(systemName: "checkmark")
-                        .resizable()
-                        .frame(width: 16, height: 16, alignment: .center)
-                    
-                    /// Displays the text "OK" in bold with predefined font style .body
-                    Text("OK")
-                        .font(.body)
-                        .bold()
-                }
+                Image("akarIconsChevronRight")
+                    .resizable()
+                    .frame(width: 30, height: 30, alignment: .center)
             }
-        }
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20))
+        }.frame(height: 100)
     }
     
     /// The function returns the certain part of datetime
@@ -83,10 +77,11 @@ struct UpcomingEvent: View {
     
     /// The function gets the duration of the event
     func getDuration() -> String {
-        return extractPartFromDateTime(datetime: startDateTime, part: "hour") + ":" +
-        extractPartFromDateTime(datetime: startDateTime, part: "minute") + " - " +
-        extractPartFromDateTime(datetime: endDateTime, part: "hour") + ":" +
-        extractPartFromDateTime(datetime: endDateTime, part: "minute")
+        return "2:00PM - 5:00PM"
+//        return extractPartFromDateTime(datetime: startDateTime, part: "hour") + ":" +
+//        extractPartFromDateTime(datetime: startDateTime, part: "minute") + " - " +
+//        extractPartFromDateTime(datetime: endDateTime, part: "hour") + ":" +
+//        extractPartFromDateTime(datetime: endDateTime, part: "minute")
     }
 }
 
