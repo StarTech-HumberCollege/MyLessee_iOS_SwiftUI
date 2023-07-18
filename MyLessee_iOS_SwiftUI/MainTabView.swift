@@ -34,6 +34,28 @@ struct MainTabView: View {
                 .foregroundColor(selectedTab == 0 ? .blue : .gray)
                 .tag(1)
             
+            CalendarView()
+                .tabItem {
+                    VStack {
+                        Image("iconCalendar")
+                            .renderingMode(.template)
+                        Text("Calendar")
+                    }
+                }
+                .foregroundColor(selectedTab == 0 ? .blue : .gray)
+                .tag(2)
+            
+            MessageView()
+                .tabItem {
+                    VStack {
+                        Image("iconMessage")
+                            .renderingMode(.template)
+                        Text("Messages")
+                    }
+                }
+                .foregroundColor(selectedTab == 0 ? .blue : .gray)
+                .tag(3)
+            
             NotificationsView()
                 .tabItem {
                     VStack {
@@ -43,7 +65,7 @@ struct MainTabView: View {
                     }
                 }
                 .foregroundColor(selectedTab == 0 ? .blue : .gray)
-                .tag(2)
+                .tag(4)
         }
     }
 }
