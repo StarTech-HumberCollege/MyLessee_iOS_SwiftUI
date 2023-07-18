@@ -13,6 +13,8 @@
 		8DA1818A2A67115F002353F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA181892A67115F002353F9 /* Preview Assets.xcassets */; };
 		8DA181912A67154E002353F9 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181902A67154E002353F9 /* AccountView.swift */; };
 		F59F59CA2A671F1500DFBA71 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59C92A671F1500DFBA71 /* HeaderView.swift */; };
+		F59F59CE2A672A4100DFBA71 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59CD2A672A4100DFBA71 /* CalendarView.swift */; };
+		F59F59D22A6730B800DFBA71 /* UpcomingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D12A6730B800DFBA71 /* UpcomingEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		8DA181892A67115F002353F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DA181902A67154E002353F9 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		F59F59C92A671F1500DFBA71 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F59F59CD2A672A4100DFBA71 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		F59F59D12A6730B800DFBA71 /* UpcomingEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		8DA181812A67115C002353F9 /* MyLessee_iOS_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F59F59CF2A672FD100DFBA71 /* Calendar */,
 				8DA181822A67115C002353F9 /* MyLessee_iOS_SwiftUIApp.swift */,
 				8DA181842A67115C002353F9 /* ContentView.swift */,
 				8DA181862A67115F002353F9 /* Assets.xcassets */,
@@ -71,6 +76,15 @@
 				8DA181892A67115F002353F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F59F59CF2A672FD100DFBA71 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				F59F59CD2A672A4100DFBA71 /* CalendarView.swift */,
+				F59F59D12A6730B800DFBA71 /* UpcomingEvent.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59F59D22A6730B800DFBA71 /* UpcomingEvent.swift in Sources */,
+				F59F59CE2A672A4100DFBA71 /* CalendarView.swift in Sources */,
 				8DA181912A67154E002353F9 /* AccountView.swift in Sources */,
 				8DA181852A67115C002353F9 /* ContentView.swift in Sources */,
 				8DA181832A67115C002353F9 /* MyLessee_iOS_SwiftUIApp.swift in Sources */,
