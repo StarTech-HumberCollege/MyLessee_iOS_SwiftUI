@@ -12,6 +12,10 @@
 		8DA181872A67115F002353F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA181862A67115F002353F9 /* Assets.xcassets */; };
 		8DA1818A2A67115F002353F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA181892A67115F002353F9 /* Preview Assets.xcassets */; };
 		8DA181912A67154E002353F9 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181902A67154E002353F9 /* AccountView.swift */; };
+		8DA181952A672E57002353F9 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181942A672E57002353F9 /* MainTabView.swift */; };
+		8DA181972A672EA8002353F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181962A672EA8002353F9 /* HomeView.swift */; };
+		8DA181992A672F40002353F9 /* MyListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181982A672F40002353F9 /* MyListingsView.swift */; };
+		8DA1819B2A673079002353F9 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA1819A2A673079002353F9 /* NotificationsView.swift */; };
 		F59F59CA2A671F1500DFBA71 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59C92A671F1500DFBA71 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +26,10 @@
 		8DA181862A67115F002353F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA181892A67115F002353F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DA181902A67154E002353F9 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		8DA181942A672E57002353F9 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		8DA181962A672EA8002353F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8DA181982A672F40002353F9 /* MyListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsView.swift; sourceTree = "<group>"; };
+		8DA1819A2A673079002353F9 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		F59F59C92A671F1500DFBA71 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +69,10 @@
 				8DA181882A67115F002353F9 /* Preview Content */,
 				8DA181902A67154E002353F9 /* AccountView.swift */,
 				F59F59C92A671F1500DFBA71 /* HeaderView.swift */,
+				8DA181942A672E57002353F9 /* MainTabView.swift */,
+				8DA181962A672EA8002353F9 /* HomeView.swift */,
+				8DA181982A672F40002353F9 /* MyListingsView.swift */,
+				8DA1819A2A673079002353F9 /* NotificationsView.swift */,
 			);
 			path = MyLessee_iOS_SwiftUI;
 			sourceTree = "<group>";
@@ -144,9 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DA181912A67154E002353F9 /* AccountView.swift in Sources */,
+				8DA181992A672F40002353F9 /* MyListingsView.swift in Sources */,
 				8DA181852A67115C002353F9 /* ContentView.swift in Sources */,
 				8DA181832A67115C002353F9 /* MyLessee_iOS_SwiftUIApp.swift in Sources */,
+				8DA181972A672EA8002353F9 /* HomeView.swift in Sources */,
 				F59F59CA2A671F1500DFBA71 /* HeaderView.swift in Sources */,
+				8DA181952A672E57002353F9 /* MainTabView.swift in Sources */,
+				8DA1819B2A673079002353F9 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

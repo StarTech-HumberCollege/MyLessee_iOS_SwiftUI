@@ -25,9 +25,11 @@ struct AccountView: View {
     
     var body: some View {
         VStack {
+            HeaderView(header: "Account")
             Text("Alvaro Beltran")
-                .font(.title)
+                .font(.headline)
             Text("Posts : 124 | Listings : 0")
+                .font(.subheadline)
                 .foregroundColor(Color.gray)
             List(items) { item in
                 HStack {
