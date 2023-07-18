@@ -16,7 +16,7 @@ struct HeaderView: View {
             HStack {
                 Image("alvaro")
                     .resizable().frame(width: 50, height: 50)
-                    .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
+                    .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 0))
                 Spacer()
                 Image("logo")
                     .resizable().frame(width: 180, height: 40)
