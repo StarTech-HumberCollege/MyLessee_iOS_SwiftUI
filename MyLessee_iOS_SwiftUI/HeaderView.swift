@@ -24,6 +24,7 @@ struct HeaderView: View {
             }
             Text(header).bold().font(.title)
                 .foregroundColor(Color(red: 0xE3 / 255, green: 0x6F / 255, blue: 0x5B / 255))
+            Divider()
         }
         .frame(width: UIScreen.main.bounds.width)
     }
