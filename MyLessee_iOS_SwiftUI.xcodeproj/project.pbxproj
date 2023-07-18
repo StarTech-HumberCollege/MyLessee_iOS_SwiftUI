@@ -19,6 +19,7 @@
 		F59F59CA2A671F1500DFBA71 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59C92A671F1500DFBA71 /* HeaderView.swift */; };
 		F59F59CE2A672A4100DFBA71 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59CD2A672A4100DFBA71 /* CalendarView.swift */; };
 		F59F59D22A6730B800DFBA71 /* UpcomingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D12A6730B800DFBA71 /* UpcomingEvent.swift */; };
+		F59F59D42A6748B900DFBA71 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D32A6748B900DFBA71 /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		F59F59C92A671F1500DFBA71 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F59F59CD2A672A4100DFBA71 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		F59F59D12A6730B800DFBA71 /* UpcomingEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEvent.swift; sourceTree = "<group>"; };
+		F59F59D32A6748B900DFBA71 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				8DA181962A672EA8002353F9 /* HomeView.swift */,
 				8DA181982A672F40002353F9 /* MyListingsView.swift */,
 				8DA1819A2A673079002353F9 /* NotificationsView.swift */,
+				F59F59D32A6748B900DFBA71 /* MessageView.swift */,
 			);
 			path = MyLessee_iOS_SwiftUI;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				8DA181992A672F40002353F9 /* MyListingsView.swift in Sources */,
 				8DA181852A67115C002353F9 /* ContentView.swift in Sources */,
 				8DA181832A67115C002353F9 /* MyLessee_iOS_SwiftUIApp.swift in Sources */,
+				F59F59D42A6748B900DFBA71 /* MessageView.swift in Sources */,
 				8DA181972A672EA8002353F9 /* HomeView.swift in Sources */,
 				F59F59CA2A671F1500DFBA71 /* HeaderView.swift in Sources */,
 				8DA181952A672E57002353F9 /* MainTabView.swift in Sources */,
