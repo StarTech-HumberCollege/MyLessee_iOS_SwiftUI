@@ -2,7 +2,7 @@
 //  MyListingsView.swift
 //  MyLessee_iOS_SwiftUI
 //
-//  Created by Zhangzhi Wang on 2023-07-18.
+//  Created by Liza Zhyr on 19/07/2023.
 //
 
 import SwiftUI
@@ -61,3 +61,4 @@ struct MyListingsView_Previews: PreviewProvider {
         MyListingsView()
     }
 }
+
