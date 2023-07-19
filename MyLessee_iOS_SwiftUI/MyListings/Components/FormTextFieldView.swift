@@ -26,7 +26,9 @@ struct FormTextFieldView: View {
 
 struct FormTextFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        @State var property_Type = "Residential"
-        FormTextFieldView(placeholder: "Property Type", propertyType: $property_Type)
+        // TODO: Need to fix the preview
+//        @State var property_Type = "Residential"
+//        FormTextFieldView(placeholder: "Property Type", propertyType: $property_Type)
+        Text("FormTextFieldView")
     }
 }

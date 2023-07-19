@@ -29,7 +29,7 @@ struct NotificationView: View {
                 
             }
         }
-        MainTabView()
+//        MainTabView()
     }
 
 }
