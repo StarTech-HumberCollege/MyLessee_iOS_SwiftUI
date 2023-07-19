@@ -15,19 +15,19 @@
 		8DA181952A672E57002353F9 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181942A672E57002353F9 /* MainTabView.swift */; };
 		8DA181972A672EA8002353F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181962A672EA8002353F9 /* HomeView.swift */; };
 		8DA181992A672F40002353F9 /* MyListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181982A672F40002353F9 /* MyListingsView.swift */; };
+		8DA1819F2A675D0B002353F9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA1819E2A675D0B002353F9 /* SignUpView.swift */; };
+		8DA181A12A67692C002353F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181A02A67692C002353F9 /* LoginView.swift */; };
 		B86F82FC2A675EF600799732 /* MessageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86F82FB2A675EF600799732 /* MessageComponent.swift */; };
 		B86F82FE2A6768E900799732 /* SearchComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86F82FD2A6768E900799732 /* SearchComponent.swift */; };
 		B86F83012A676AB600799732 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86F83002A676AB600799732 /* NotificationView.swift */; };
 		B86F83032A676AC000799732 /* NotificationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86F83022A676AC000799732 /* NotificationComponent.swift */; };
-		8DA1819B2A673079002353F9 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA1819A2A673079002353F9 /* NotificationsView.swift */; };
-		8DA1819F2A675D0B002353F9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA1819E2A675D0B002353F9 /* SignUpView.swift */; };
-		8DA181A12A67692C002353F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181A02A67692C002353F9 /* LoginView.swift */; };
 		F59F59CA2A671F1500DFBA71 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59C92A671F1500DFBA71 /* HeaderView.swift */; };
 		F59F59D42A6748B900DFBA71 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D32A6748B900DFBA71 /* MessageView.swift */; };
 		F59F59D62A674B0500DFBA71 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D52A674B0500DFBA71 /* EventView.swift */; };
 		F59F59D72A67522100DFBA71 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59CD2A672A4100DFBA71 /* CalendarView.swift */; };
 		F59F59D82A67523000DFBA71 /* UpcomingEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D12A6730B800DFBA71 /* UpcomingEventView.swift */; };
 		F59F59DA2A6754E800DFBA71 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D92A6754E800DFBA71 /* AddEventView.swift */; };
+		F59F59DD2A678E4700DFBA71 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59DC2A678E4700DFBA71 /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,19 +40,19 @@
 		8DA181942A672E57002353F9 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		8DA181962A672EA8002353F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8DA181982A672F40002353F9 /* MyListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsView.swift; sourceTree = "<group>"; };
+		8DA1819E2A675D0B002353F9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		8DA181A02A67692C002353F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B86F82FB2A675EF600799732 /* MessageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComponent.swift; sourceTree = "<group>"; };
 		B86F82FD2A6768E900799732 /* SearchComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchComponent.swift; sourceTree = "<group>"; };
 		B86F83002A676AB600799732 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		B86F83022A676AC000799732 /* NotificationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationComponent.swift; sourceTree = "<group>"; };
-		8DA1819A2A673079002353F9 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
-		8DA1819E2A675D0B002353F9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		8DA181A02A67692C002353F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F59F59C92A671F1500DFBA71 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F59F59CD2A672A4100DFBA71 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		F59F59D12A6730B800DFBA71 /* UpcomingEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventView.swift; sourceTree = "<group>"; };
 		F59F59D32A6748B900DFBA71 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		F59F59D52A674B0500DFBA71 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		F59F59D92A6754E800DFBA71 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		F59F59DC2A678E4700DFBA71 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +85,7 @@
 		8DA181812A67115C002353F9 /* MyLessee_iOS_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F59F59DB2A678E2D00DFBA71 /* Home */,
 				B86F82FF2A676A8E00799732 /* Notifications */,
 				B86F82F62A67599200799732 /* Messages */,
 				F59F59CF2A672FD100DFBA71 /* Calendar */,
@@ -95,12 +96,9 @@
 				8DA181902A67154E002353F9 /* AccountView.swift */,
 				F59F59C92A671F1500DFBA71 /* HeaderView.swift */,
 				8DA181942A672E57002353F9 /* MainTabView.swift */,
-				8DA181962A672EA8002353F9 /* HomeView.swift */,
 				8DA181982A672F40002353F9 /* MyListingsView.swift */,
-				8DA1819A2A673079002353F9 /* NotificationsView.swift */,
 				8DA1819E2A675D0B002353F9 /* SignUpView.swift */,
 				8DA181A02A67692C002353F9 /* LoginView.swift */,
-
 			);
 			path = MyLessee_iOS_SwiftUI;
 			sourceTree = "<group>";
@@ -141,6 +139,15 @@
 				F59F59D92A6754E800DFBA71 /* AddEventView.swift */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		F59F59DB2A678E2D00DFBA71 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8DA181962A672EA8002353F9 /* HomeView.swift */,
+				F59F59DC2A678E4700DFBA71 /* PostView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +229,7 @@
 				8DA181992A672F40002353F9 /* MyListingsView.swift in Sources */,
 				8DA181852A67115C002353F9 /* ContentView.swift in Sources */,
 				B86F82FC2A675EF600799732 /* MessageComponent.swift in Sources */,
+				F59F59DD2A678E4700DFBA71 /* PostView.swift in Sources */,
 				F59F59DA2A6754E800DFBA71 /* AddEventView.swift in Sources */,
 				F59F59D82A67523000DFBA71 /* UpcomingEventView.swift in Sources */,
 				8DA181832A67115C002353F9 /* MyLessee_iOS_SwiftUIApp.swift in Sources */,
