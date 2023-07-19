@@ -25,21 +25,21 @@ struct PostView: View {
                 VStack {
                     Image(icon)
                         .resizable()
-                        .frame(width: 60, height: 60)
+                        .frame(width: 50, height: 50)
                     Spacer()
-                }.frame(width: 60)
+                }.frame(width: 50)
                 
                 VStack {
                     /// Displays user name
                     HStack {
-                        Text(name).bold().font(.title3)
+                        Text(name).bold().font(.system(size: 18))
                             .foregroundColor(Color.black)
                             .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 0))
                         Spacer()
                     }
                     
                     /// Displays the content
-                    Text(content).font(.title3)
+                    Text(content).font(.system(size: 16))
                         .foregroundColor(Color.black)
                         .padding(EdgeInsets(top: 1, leading: 30, bottom: 0, trailing: 0))
                     
