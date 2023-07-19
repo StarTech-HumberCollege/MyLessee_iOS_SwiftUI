@@ -13,6 +13,8 @@ struct LoginView: View {
     @State private var password = ""
     @State private var confirmPassword = ""
     
+    let changeActiveView: () -> Void
+    
     var body: some View {
         VStack(alignment: .center) {
             Image("logoNoBg1")
@@ -55,7 +57,7 @@ struct LoginView: View {
             }
             .padding(.top, 15)
             
-            Button(action: {}) {
+            Button(action: changeActiveView) {
                 Image("buttonLogin")
                     .resizable()
                     .scaledToFit()
@@ -100,6 +102,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(changeActiveView: {})
     }
 }

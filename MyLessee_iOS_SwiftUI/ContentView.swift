@@ -7,16 +7,27 @@
 
 import SwiftUI
 
+enum ActiveView {
+    case signUp
+    case login
+    case mainTab
+}
+
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    @State private var activeView: ActiveView = .signUp
+
+        var body: some View {
+            Group {
+                switch activeView {
+                case .signUp:
+                    SignUpView(changeActiveView: { self.activeView = .login })
+                case .login:
+                    LoginView(changeActiveView: { self.activeView = .mainTab })
+                case .mainTab:
+                    MainTabView()
+                }
+            }
         }
-        .padding()
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
