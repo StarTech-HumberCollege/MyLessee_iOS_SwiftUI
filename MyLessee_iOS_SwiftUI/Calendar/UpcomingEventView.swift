@@ -60,7 +60,8 @@ struct UpcomingEventView: View {
             let components = calendar.dateComponents([.month, .day, .hour, .minute], from: date)
             switch part {
                 case "month":
-                    return "\(components.month ?? -1)"
+//                    return "\(components.month ?? -1)"
+                    return "AUG"
                 case "day":
                     return "\(components.day ?? -1)"
                 case "hour":
