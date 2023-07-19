@@ -26,11 +26,18 @@ struct AccountView: View {
     var body: some View {
         VStack {
             HeaderView(header: "Account")
-            Text("Alvaro Beltran")
-                .font(.headline)
-            Text("Posts : 124 | Listings : 0")
-                .font(.subheadline)
-                .foregroundColor(Color.gray)
+            
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Alvaro Beltran")
+                        .font(.headline)
+                    Text("Posts : 124 | Listings : 0")
+                        .font(.subheadline)
+                        .foregroundColor(Color.gray)
+                }
+                Spacer()
+            }.padding(.leading, 25)
+            
             List(items) { item in
                 HStack {
                     Image(item.iconName)
