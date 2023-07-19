@@ -64,7 +64,7 @@ struct MainTabView: View {
                         Text("Notifications")
                     }
                 }
-                .foregroundColor(selectedTab == 0 ? .blue : .gray)
+               
                 .tag(4)
         }
     }
