@@ -56,7 +56,7 @@ struct MainTabView: View {
                 .foregroundColor(selectedTab == 0 ? .blue : .gray)
                 .tag(3)
             
-            NotificationsView()
+            NotificationView()
                 .tabItem {
                     VStack {
                         Image("iconNotifications")

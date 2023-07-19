@@ -15,7 +15,10 @@
 		8DA181952A672E57002353F9 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181942A672E57002353F9 /* MainTabView.swift */; };
 		8DA181972A672EA8002353F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181962A672EA8002353F9 /* HomeView.swift */; };
 		8DA181992A672F40002353F9 /* MyListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181982A672F40002353F9 /* MyListingsView.swift */; };
-		8DA1819B2A673079002353F9 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA1819A2A673079002353F9 /* NotificationsView.swift */; };
+		B86F82FC2A675EF600799732 /* MessageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86F82FB2A675EF600799732 /* MessageComponent.swift */; };
+		B86F82FE2A6768E900799732 /* SearchComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86F82FD2A6768E900799732 /* SearchComponent.swift */; };
+		B86F83012A676AB600799732 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86F83002A676AB600799732 /* NotificationView.swift */; };
+		B86F83032A676AC000799732 /* NotificationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86F83022A676AC000799732 /* NotificationComponent.swift */; };
 		F59F59CA2A671F1500DFBA71 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59C92A671F1500DFBA71 /* HeaderView.swift */; };
 		F59F59D42A6748B900DFBA71 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D32A6748B900DFBA71 /* MessageView.swift */; };
 		F59F59D62A674B0500DFBA71 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D52A674B0500DFBA71 /* EventView.swift */; };
@@ -34,7 +37,10 @@
 		8DA181942A672E57002353F9 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		8DA181962A672EA8002353F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8DA181982A672F40002353F9 /* MyListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsView.swift; sourceTree = "<group>"; };
-		8DA1819A2A673079002353F9 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		B86F82FB2A675EF600799732 /* MessageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComponent.swift; sourceTree = "<group>"; };
+		B86F82FD2A6768E900799732 /* SearchComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchComponent.swift; sourceTree = "<group>"; };
+		B86F83002A676AB600799732 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		B86F83022A676AC000799732 /* NotificationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationComponent.swift; sourceTree = "<group>"; };
 		F59F59C92A671F1500DFBA71 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F59F59CD2A672A4100DFBA71 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		F59F59D12A6730B800DFBA71 /* UpcomingEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventView.swift; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 		8DA181812A67115C002353F9 /* MyLessee_iOS_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B86F82FF2A676A8E00799732 /* Notifications */,
+				B86F82F62A67599200799732 /* Messages */,
 				F59F59CF2A672FD100DFBA71 /* Calendar */,
 				8DA181822A67115C002353F9 /* MyLessee_iOS_SwiftUIApp.swift */,
 				8DA181842A67115C002353F9 /* ContentView.swift */,
@@ -83,8 +91,6 @@
 				8DA181942A672E57002353F9 /* MainTabView.swift */,
 				8DA181962A672EA8002353F9 /* HomeView.swift */,
 				8DA181982A672F40002353F9 /* MyListingsView.swift */,
-				8DA1819A2A673079002353F9 /* NotificationsView.swift */,
-				F59F59D32A6748B900DFBA71 /* MessageView.swift */,
 			);
 			path = MyLessee_iOS_SwiftUI;
 			sourceTree = "<group>";
@@ -95,6 +101,25 @@
 				8DA181892A67115F002353F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B86F82F62A67599200799732 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				F59F59D32A6748B900DFBA71 /* MessageView.swift */,
+				B86F82FB2A675EF600799732 /* MessageComponent.swift */,
+				B86F82FD2A6768E900799732 /* SearchComponent.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		B86F82FF2A676A8E00799732 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				B86F83002A676AB600799732 /* NotificationView.swift */,
+				B86F83022A676AC000799732 /* NotificationComponent.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		F59F59CF2A672FD100DFBA71 /* Calendar */ = {
@@ -179,18 +204,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DA181912A67154E002353F9 /* AccountView.swift in Sources */,
+				B86F82FE2A6768E900799732 /* SearchComponent.swift in Sources */,
 				F59F59D72A67522100DFBA71 /* CalendarView.swift in Sources */,
+				B86F83012A676AB600799732 /* NotificationView.swift in Sources */,
 				F59F59D62A674B0500DFBA71 /* EventView.swift in Sources */,
 				8DA181992A672F40002353F9 /* MyListingsView.swift in Sources */,
 				8DA181852A67115C002353F9 /* ContentView.swift in Sources */,
+				B86F82FC2A675EF600799732 /* MessageComponent.swift in Sources */,
 				F59F59DA2A6754E800DFBA71 /* AddEventView.swift in Sources */,
 				F59F59D82A67523000DFBA71 /* UpcomingEventView.swift in Sources */,
 				8DA181832A67115C002353F9 /* MyLessee_iOS_SwiftUIApp.swift in Sources */,
 				F59F59D42A6748B900DFBA71 /* MessageView.swift in Sources */,
+				B86F83032A676AC000799732 /* NotificationComponent.swift in Sources */,
 				8DA181972A672EA8002353F9 /* HomeView.swift in Sources */,
 				F59F59CA2A671F1500DFBA71 /* HeaderView.swift in Sources */,
 				8DA181952A672E57002353F9 /* MainTabView.swift in Sources */,
-				8DA1819B2A673079002353F9 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
