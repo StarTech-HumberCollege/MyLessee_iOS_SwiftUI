@@ -1,5 +1,5 @@
 //
-//  SignUpView.swift
+//  LoginView.swift
 //  MyLessee_iOS_SwiftUI
 //
 //  Created by Zhangzhi Wang on 2023-07-18.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SignUpView: View {
+struct LoginView: View {
     @State private var fullName = ""
     @State private var email = ""
     @State private var password = ""
@@ -20,7 +20,7 @@ struct SignUpView: View {
                 .aspectRatio(contentMode: .fit)
                 .padding(.vertical, 15)
             
-            Text("Create Account")
+            Text("Login to your account")
                 .foregroundColor(.gray)
                 .font(.subheadline)
                 .padding(.bottom, 15)
@@ -36,15 +36,6 @@ struct SignUpView: View {
                 }
                 
                 ZStack {
-                    Image("mail")
-                        .resizable()
-                        .frame(width: 300, height: 50)
-                    TextField("Enter email", text: $email)
-                        .foregroundColor(.black)
-                        .padding(.leading, 75)
-                }
-                
-                ZStack {
                     Image("password")
                         .resizable()
                         .frame(width: 300, height: 50)
@@ -52,22 +43,20 @@ struct SignUpView: View {
                         .foregroundColor(.black)
                         .padding(.leading, 75)
                 }
-                
-                ZStack {
-                    Image("password")
-                        .resizable()
-                        .frame(width: 300, height: 50)
-                    TextField("Confirm password", text: $confirmPassword)
-                        .foregroundColor(.black)
-                        .padding(.leading, 75)
-                }
             }
             
             
-            
+            HStack {
+                Spacer()
+                Text("Forgot your password?")
+                    .foregroundColor(.gray)
+                    .font(.subheadline)
+                    .padding(.trailing, 28)
+            }
+            .padding(.top, 15)
             
             Button(action: {}) {
-                Image("buttonCreate")
+                Image("buttonLogin")
                     .resizable()
                     .scaledToFit()
             }
@@ -81,21 +70,23 @@ struct SignUpView: View {
                 .font(.subheadline)
                 .padding(.vertical, 10)
             
-            Button(action: {}) {
-                Image("signUpWithGoogle")
-                    .resizable()
-                    .scaledToFit()
+            VStack {
+                Button(action: {}) {
+                    Image("signUpWithGoogle")
+                        .resizable()
+                        .scaledToFit()
+                }
+                .frame(height: 45)
+                
+                Button(action: {}) {
+                    Image("signUpWithFacebook")
+                        .resizable()
+                        .scaledToFit()
+                }
+                .frame(height: 45)
             }
-            .frame(height: 45)
             
-            Button(action: {}) {
-                Image("signUpWithFacebook")
-                    .resizable()
-                    .scaledToFit()
-            }
-            .frame(height: 45)
-            
-            Text("Already have an account?")
+            Text("Don’t have an account yet?")
                 .font(.subheadline)
                 .foregroundColor(Color(red: 0.49, green: 0.58, blue: 0.98))
                 .underline()
@@ -107,8 +98,8 @@ struct SignUpView: View {
     }
 }
 
-struct SignUpView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        LoginView()
     }
 }

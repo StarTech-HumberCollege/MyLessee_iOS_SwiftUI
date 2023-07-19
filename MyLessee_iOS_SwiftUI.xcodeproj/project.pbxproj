@@ -17,6 +17,7 @@
 		8DA181992A672F40002353F9 /* MyListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181982A672F40002353F9 /* MyListingsView.swift */; };
 		8DA1819B2A673079002353F9 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA1819A2A673079002353F9 /* NotificationsView.swift */; };
 		8DA1819F2A675D0B002353F9 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA1819E2A675D0B002353F9 /* SignUpView.swift */; };
+		8DA181A12A67692C002353F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA181A02A67692C002353F9 /* LoginView.swift */; };
 		F59F59CA2A671F1500DFBA71 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59C92A671F1500DFBA71 /* HeaderView.swift */; };
 		F59F59D42A6748B900DFBA71 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D32A6748B900DFBA71 /* MessageView.swift */; };
 		F59F59D62A674B0500DFBA71 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59F59D52A674B0500DFBA71 /* EventView.swift */; };
@@ -37,6 +38,7 @@
 		8DA181982A672F40002353F9 /* MyListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsView.swift; sourceTree = "<group>"; };
 		8DA1819A2A673079002353F9 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		8DA1819E2A675D0B002353F9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		8DA181A02A67692C002353F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F59F59C92A671F1500DFBA71 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F59F59CD2A672A4100DFBA71 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		F59F59D12A6730B800DFBA71 /* UpcomingEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				8DA1819A2A673079002353F9 /* NotificationsView.swift */,
 				F59F59D32A6748B900DFBA71 /* MessageView.swift */,
 				8DA1819E2A675D0B002353F9 /* SignUpView.swift */,
+				8DA181A02A67692C002353F9 /* LoginView.swift */,
 			);
 			path = MyLessee_iOS_SwiftUI;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				8DA181912A67154E002353F9 /* AccountView.swift in Sources */,
 				F59F59D72A67522100DFBA71 /* CalendarView.swift in Sources */,
 				F59F59D62A674B0500DFBA71 /* EventView.swift in Sources */,
+				8DA181A12A67692C002353F9 /* LoginView.swift in Sources */,
 				8DA181992A672F40002353F9 /* MyListingsView.swift in Sources */,
 				8DA181852A67115C002353F9 /* ContentView.swift in Sources */,
 				F59F59DA2A6754E800DFBA71 /* AddEventView.swift in Sources */,
