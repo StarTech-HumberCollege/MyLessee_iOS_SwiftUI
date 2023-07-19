@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  MyLessee_iOS_SwiftUI
 //
-//  Created by Zhangzhi Wang on 2023-07-18.
+//  Created by Tuyi Chen on 2023-07-18.
 //
 
 import SwiftUI

@@ -64,7 +64,6 @@ struct MainTabView: View {
                         Text("Notifications")
                     }
                 }
-               
                 .tag(4)
         }
     }
