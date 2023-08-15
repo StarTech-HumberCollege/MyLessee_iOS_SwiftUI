@@ -33,11 +33,11 @@ struct SignUpView: View {
             VStack(spacing: 15) {
 //                FormTextFieldView(iconName: "profile_icon", placeholder: "Enter username", propertyType: $fullName)
                 
-                FormTextFieldView(iconName: "mail_icon", placeholder: "Enter email", propertyType: $email)
+                FormTextFieldView(iconName: "mail_icon", placeholder: "Enter email", attribute: $email)
                 
-                FormTextFieldView(iconName: "lock_icon", placeholder: "Enter password", propertyType: $password)
+                FormTextFieldView(iconName: "lock_icon", placeholder: "Enter password", attribute: $password)
                 
-                FormTextFieldView(iconName: "lock_icon", placeholder: "Confirm password", propertyType: $confirmPassword)
+                FormTextFieldView(iconName: "lock_icon", placeholder: "Confirm password", attribute: $confirmPassword)
                 
             }.padding(.horizontal,30)
             
@@ -64,6 +64,7 @@ struct SignUpView: View {
                         if let authResult = authResult {
                             print("User UID: ")
                             print(authResult.user.uid)
+                            
                         }
                     }
                 }
@@ -119,7 +120,6 @@ struct SignUpView: View {
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-//        SignUpView(changeActiveView: {})
         SignUpView()
     }
 }

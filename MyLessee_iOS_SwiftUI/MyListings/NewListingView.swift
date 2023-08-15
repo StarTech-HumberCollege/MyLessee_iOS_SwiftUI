@@ -8,27 +8,37 @@
 import SwiftUI
 
 struct NewListingView: View {
-    @State var propertyType = ""
+    @State private var buldingType = ""
+    @State private var price = ""
+    @State private var bedrooms = ""
+    @State private var address  = ""
+    @State private var imageurl = ""
+    @State private var description = ""
+//    var postedDaysAgo: String
+    @EnvironmentObject var dataController: DataController
     
+    @State private var showAlert = false
     
     var body: some View {
         NavigationStack {
             HeaderView(header: "New Listings")
             VStack {
-                FormTextFieldView(iconName: "", placeholder: "Property Type", propertyType: $propertyType)
+//                FormTextFieldView(iconName: "", placeholder: "Property Type", propertyType: $propertyType)
+//                    .padding(.bottom, 10)
+                FormTextFieldView(iconName: "", placeholder: "Building", attribute: $buldingType)
                     .padding(.bottom, 10)
-                FormTextFieldView(iconName: "", placeholder: "Building", propertyType: $propertyType)
+                FormTextFieldView(iconName: "", placeholder: "Price (CAD)", attribute: $price)
                     .padding(.bottom, 10)
-                FormTextFieldView(iconName: "", placeholder: "Price (CAD)", propertyType: $propertyType)
+                FormTextFieldView(iconName: "", placeholder: "Rooms", attribute: $bedrooms)
                     .padding(.bottom, 10)
-                FormTextFieldView(iconName: "", placeholder: "Rooms", propertyType: $propertyType)
+                FormTextFieldView(iconName: "", placeholder: "Address", attribute: $address)
                     .padding(.bottom, 10)
-                FormTextFieldView(iconName: "", placeholder: "Address", propertyType: $propertyType)
-                    .padding(.bottom, 10)
-                FormTextFieldView(iconName: "", placeholder: "Description", propertyType: $propertyType)
+                FormTextFieldView(iconName: "", placeholder: "Description", attribute: $description)
                 
                 Spacer()
-                Button(action: {}){
+                Button(action: {
+                    
+                }){
                     Capsule()
                         .fill(Color( red: 227/255, green: 111/255, blue: 91/255, opacity: 1.0))
                         .frame(width: 180, height: 50)
@@ -40,7 +50,13 @@ struct NewListingView: View {
                         )
                 }
                 
-                Button(action: {}){
+                Button(action: {
+                    dataController.addListing(address: address, bedrooms: bedrooms, buldingType: buldingType, description: description, imageurl: imageurl, price: price)
+                    
+//                    dataController.fetchListings()
+                    
+                    showAlert = true
+                }){
                     Capsule()
                         .fill(Color( red: 227/255, green: 111/255, blue: 91/255, opacity: 1.0))
                         .frame(width: 180, height: 50)
@@ -56,7 +72,16 @@ struct NewListingView: View {
                 
                 
             }///VStack
-            .padding()
+            .padding(.horizontal, 30)
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Listing Added"),
+                    message: Text("The listing has been successfully Added."),
+                    dismissButton: .default(Text("OK")) {
+                        dataController.fetchListings() // Re-fetch data
+                    }
+                )
+            }
             
         }///NavStack
         
@@ -66,5 +91,6 @@ struct NewListingView: View {
 struct NewListingView_Previews: PreviewProvider {
     static var previews: some View {
         NewListingView()
+            .environmentObject(DataController())
     }
 }

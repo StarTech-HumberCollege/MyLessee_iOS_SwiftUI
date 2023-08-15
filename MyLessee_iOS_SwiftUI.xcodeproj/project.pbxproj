@@ -35,6 +35,8 @@
 		7F1225DD2A8AD70F009BE2A1 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1225DC2A8AD70F009BE2A1 /* FirebaseRemoteConfigSwift */; };
 		7F1225DF2A8AD70F009BE2A1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1225DE2A8AD70F009BE2A1 /* FirebaseStorage */; };
 		7F1225E12A8AD70F009BE2A1 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7F1225E02A8AD70F009BE2A1 /* FirebaseStorageCombine-Community */; };
+		7F1225E42A8B26C8009BE2A1 /* ListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1225E32A8B26C8009BE2A1 /* ListingModel.swift */; };
+		7F1225E62A8B3474009BE2A1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1225E52A8B3474009BE2A1 /* DataController.swift */; };
 		7FF6A9C72A67819C003ED6AE /* ListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF6A9C62A67819C003ED6AE /* ListingView.swift */; };
 		7FF6A9C92A678FE9003ED6AE /* NewListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF6A9C82A678FE9003ED6AE /* NewListingView.swift */; };
 		7FF6A9CC2A6794C5003ED6AE /* FormTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF6A9CB2A6794C5003ED6AE /* FormTextFieldView.swift */; };
@@ -63,6 +65,8 @@
 
 /* Begin PBXFileReference section */
 		7F1225A92A8AD5CB009BE2A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F1225E32A8B26C8009BE2A1 /* ListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingModel.swift; sourceTree = "<group>"; };
+		7F1225E52A8B3474009BE2A1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7FF6A9C62A67819C003ED6AE /* ListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingView.swift; sourceTree = "<group>"; };
 		7FF6A9C82A678FE9003ED6AE /* NewListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListingView.swift; sourceTree = "<group>"; };
 		7FF6A9CB2A6794C5003ED6AE /* FormTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextFieldView.swift; sourceTree = "<group>"; };
@@ -128,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F1225E22A8B26A3009BE2A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F1225E32A8B26C8009BE2A1 /* ListingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7FF6A9C52A678179003ED6AE /* MyListings */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +178,7 @@
 		8DA181812A67115C002353F9 /* MyLessee_iOS_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7F1225E22A8B26A3009BE2A1 /* Models */,
 				7FF6A9C52A678179003ED6AE /* MyListings */,
 				F59F59DB2A678E2D00DFBA71 /* Home */,
 				B86F82FF2A676A8E00799732 /* Notifications */,
@@ -181,6 +194,7 @@
 				8DA1819E2A675D0B002353F9 /* SignUpView.swift */,
 				8DA181A02A67692C002353F9 /* LoginView.swift */,
 				7F1225A92A8AD5CB009BE2A1 /* GoogleService-Info.plist */,
+				7F1225E52A8B3474009BE2A1 /* DataController.swift */,
 			);
 			path = MyLessee_iOS_SwiftUI;
 			sourceTree = "<group>";
@@ -346,7 +360,9 @@
 				8DA181852A67115C002353F9 /* ContentView.swift in Sources */,
 				7FF6A9CE2A67AB6E003ED6AE /* MyListingsView.swift in Sources */,
 				7FF6A9C72A67819C003ED6AE /* ListingView.swift in Sources */,
+				7F1225E42A8B26C8009BE2A1 /* ListingModel.swift in Sources */,
 				B86F82FC2A675EF600799732 /* MessageComponent.swift in Sources */,
+				7F1225E62A8B3474009BE2A1 /* DataController.swift in Sources */,
 				F59F59DD2A678E4700DFBA71 /* PostView.swift in Sources */,
 				F59F59DA2A6754E800DFBA71 /* AddEventView.swift in Sources */,
 				F59F59D82A67523000DFBA71 /* UpcomingEventView.swift in Sources */,

@@ -19,13 +19,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct MyLessee_iOS_SwiftUIApp: App {
+    @StateObject var dataController =  DataController()
+    
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            SignUpView()
+            ContentView()
+                .environmentObject(dataController)
         }
     }
 }

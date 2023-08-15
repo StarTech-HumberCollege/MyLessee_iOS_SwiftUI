@@ -7,31 +7,24 @@
 
 import SwiftUI
 
-enum ActiveView {
-    case signUp
-    case login
-    case mainTab
-}
-
 struct ContentView: View {
-    @State private var activeView: ActiveView = .signUp
-
-        var body: some View {
-            Group {
-//                switch activeView {
-//                case .signUp:
-//                    SignUpView(changeActiveView: { self.activeView = .login })
-//                case .login:
-//                    LoginView(changeActiveView: { self.activeView = .mainTab })
-//                case .mainTab:
-//                    MainTabView()
-//                }
-            }
+    @AppStorage("uid") var userID: String = ""
+    
+    
+    var body: some View {
+        //If in User Defaults saved any uid -> Display MainTabView, if empty display SignupView
+        if userID.isEmpty {
+            LoginView()
         }
+        else{
+            MainTabView()
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+           
     }
 }

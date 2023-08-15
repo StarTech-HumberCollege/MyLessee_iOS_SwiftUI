@@ -12,8 +12,8 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     
-//    let changeActiveView: () -> Void
     @State private var showMainTab: Bool = false
+    @AppStorage("uid") var userID: String = ""
     
     var body: some View {
         NavigationStack {
@@ -29,9 +29,9 @@ struct LoginView: View {
             
             //MARK: - FIELDS
             VStack(spacing: 15) {
-                FormTextFieldView(iconName: "mail_icon", placeholder: "Enter email", propertyType: $email)
+                FormTextFieldView(iconName: "mail_icon", placeholder: "Enter email", attribute: $email)
                 
-                FormTextFieldView(iconName: "lock_icon", placeholder: "Enter password", propertyType: $password)
+                FormTextFieldView(iconName: "lock_icon", placeholder: "Enter password", attribute: $password)
                 
             }.padding(.horizontal,30)
             
@@ -59,7 +59,9 @@ struct LoginView: View {
                     if let authResult = authResult {
                         print("User UID: ")
                         print(authResult.user.uid)
-                        
+                            
+                        //Set UserID into User Defaults
+                        userID = authResult.user.uid
                         showMainTab = true
                     }
                 }
