@@ -20,6 +20,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct MyLessee_iOS_SwiftUIApp: App {
     @StateObject var dataController =  DataController()
+    @StateObject private var photoPickerViewModel = PhotoPickerViewModel()
     
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
@@ -28,6 +29,7 @@ struct MyLessee_iOS_SwiftUIApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(dataController)
+                .environmentObject(photoPickerViewModel)
         }
     }
 }
