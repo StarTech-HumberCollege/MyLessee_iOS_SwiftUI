@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct MyListingsView: View {
     //Dummy Data
@@ -43,9 +44,18 @@ struct MyListingsView: View {
                             .foregroundColor(Color( red: 227/255, green: 111/255, blue: 91/255, opacity: 1.0))
                     }
                     
-                    EditButton(
-                        //Non Functional
-                    )
+                    Button(action: {
+                        let firebaseAuth = Auth.auth()
+                        do {
+                          try firebaseAuth.signOut()
+                            print("SUCCESSFULLY SIGN OUT")
+                        } catch let signOutError as NSError {
+                          print("Error signing out: %@", signOutError)
+                        }
+                        
+                    }){
+                        Text("Sign Out")
+                    }
                     .font(.title3)
                     .foregroundColor(Color( red: 227/255, green: 111/255, blue: 91/255, opacity: 1.0))
                 }

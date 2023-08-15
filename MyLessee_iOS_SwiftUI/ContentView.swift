@@ -18,14 +18,14 @@ struct ContentView: View {
 
         var body: some View {
             Group {
-                switch activeView {
-                case .signUp:
-                    SignUpView(changeActiveView: { self.activeView = .login })
-                case .login:
-                    LoginView(changeActiveView: { self.activeView = .mainTab })
-                case .mainTab:
-                    MainTabView()
-                }
+//                switch activeView {
+//                case .signUp:
+//                    SignUpView(changeActiveView: { self.activeView = .login })
+//                case .login:
+//                    LoginView(changeActiveView: { self.activeView = .mainTab })
+//                case .mainTab:
+//                    MainTabView()
+//                }
             }
         }
 }

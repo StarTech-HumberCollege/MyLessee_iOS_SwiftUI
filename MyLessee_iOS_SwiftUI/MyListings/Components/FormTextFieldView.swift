@@ -8,27 +8,33 @@
 import SwiftUI
 
 struct FormTextFieldView: View {
+    let iconName: String
     let placeholder: String
     @Binding var propertyType: String
     
-    var body: some View {
-        Capsule()
-            .stroke(Color.blue, lineWidth: 1)
-            .frame(width: 340, height: 50)
-            .shadow(color: .gray, radius: 0.5, x: 0, y: 1)
-            .overlay(
-                TextField(placeholder, text: $propertyType)
-                    .font(.title3)
-                    .padding(.leading, 30)
-            )
+    var body: some View {        
+        HStack {
+            Image(iconName)
+                .padding(.trailing)
+                .offset(x: 5)
+            TextField(placeholder, text: $propertyType)
+                .font(.title3)
+                .autocapitalization(.none)
+               
+        }
+        .padding(13)
+        .overlay(
+            Capsule()
+                .stroke(Color(red: 126/255, green: 147/255, blue: 249/255), lineWidth: 1)
+//                .shadow(color: .gray, radius: 1, x: 0, y: 1)
+        )
     }
 }
 
 struct FormTextFieldView_Previews: PreviewProvider {
     static var previews: some View {
         // TODO: Need to fix the preview
-//        @State var property_Type = "Residential"
-//        FormTextFieldView(placeholder: "Property Type", propertyType: $property_Type)
-        Text("FormTextFieldView")
+        @State var property_Type = "Residential"
+        FormTextFieldView(iconName: "profile_icon", placeholder: "Property Type", propertyType: $property_Type)
     }
 }
