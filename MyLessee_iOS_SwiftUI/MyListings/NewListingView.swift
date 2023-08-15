@@ -51,7 +51,7 @@ struct NewListingView: View {
                             )
                     }
                     
-                    NavigationLink(destination: PhotoPreviewView(image: profilePhotoModel.selectedImage)) {
+                    NavigationLink(destination: PhotoPreviewView( selectedImage: profilePhotoModel.selectedImage)) {
                                 Text("Preview Photo")
                             }
                     
