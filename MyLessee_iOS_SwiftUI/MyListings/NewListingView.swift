@@ -15,17 +15,17 @@ struct NewListingView: View {
         NavigationStack {
             HeaderView(header: "New Listings")
             VStack {
-                FormTextFieldView(placeholder: "Property Type", propertyType: $propertyType)
+                FormTextFieldView(iconName: "", placeholder: "Property Type", propertyType: $propertyType)
                     .padding(.bottom, 10)
-                FormTextFieldView(placeholder: "Building", propertyType: $propertyType)
+                FormTextFieldView(iconName: "", placeholder: "Building", propertyType: $propertyType)
                     .padding(.bottom, 10)
-                FormTextFieldView(placeholder: "Price (CAD)", propertyType: $propertyType)
+                FormTextFieldView(iconName: "", placeholder: "Price (CAD)", propertyType: $propertyType)
                     .padding(.bottom, 10)
-                FormTextFieldView(placeholder: "Rooms", propertyType: $propertyType)
+                FormTextFieldView(iconName: "", placeholder: "Rooms", propertyType: $propertyType)
                     .padding(.bottom, 10)
-                FormTextFieldView(placeholder: "Address", propertyType: $propertyType)
+                FormTextFieldView(iconName: "", placeholder: "Address", propertyType: $propertyType)
                     .padding(.bottom, 10)
-                FormTextFieldView(placeholder: "Description", propertyType: $propertyType)
+                FormTextFieldView(iconName: "", placeholder: "Description", propertyType: $propertyType)
                 
                 Spacer()
                 Button(action: {}){
@@ -55,7 +55,8 @@ struct NewListingView: View {
                 Spacer()
                 
                 
-            }
+            }///VStack
+            .padding()
             
         }///NavStack
         
